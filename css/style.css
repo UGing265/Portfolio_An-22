@@ -1,33 +1,32 @@
-
-*{
-    text-decoration: none;    
+* {
+    text-decoration: none;
 }
 
-p{
+p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     background-color: lightblue;
 }
 
-.navbar{
+.navbar {
     background-color: black;
 
 }
 
 
-.navbar .bar{
+.navbar .bar {
     display: flex;
     align-items: center;
-    
+
     flex-direction: row-reverse;
     gap: 10px;
     margin-right: 30px;
 
 }
 
-.navbar .bar a{
+.navbar .bar a {
     font-size: 25px;
     font-weight: bold;
     color: aqua;
@@ -38,7 +37,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 
-.navbar .bar a:hover{
+.navbar .bar a:hover {
     font-size: 25px;
     font-weight: bold;
     color: darkcyan;
@@ -48,8 +47,8 @@ body{
 
 }
 
-main{
-    font-family: 'Franklin Gothic Medium','';
+main {
+    font-family: 'Franklin Gothic Medium', '';
 }
 
 .hero_section {
@@ -61,19 +60,90 @@ main{
     padding-bottom: 50%;
     min-width: 1000px;
 }
-
-.about{
+/*
+.intro-about {
+    margin: 0px 1cm 0px 1cm;
+    display: grid;
+    grid-template-rows: repeat(4,100px);
+    grid-template-columns:minmax(300px,500px) minmax(300px,500px);
+    
+}
+.intro-about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    
+}
+@media screen and (max-width: 280px){
+    .intro-about img{
+        border: 10px solid red;
+    }
     
 }
 
-.my_product{
+.intro-about p:nth-child(2){
+    grid-column: 2 / 1;
+}
+*/
+.intro-about{
+    margin: 50px 1cm 50px 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20%;
+}
+.intro-about img{
+    min-width: 300px;
+    min-height: auto;
+
+    width: 40%;
+   height: auto;
+
+    object-fit: fill;
+    
+}
+.intro-about p{
+    max-width: 40%;
+    align-self: center;
+    flex-shrink: 1;
+ 
+    font-size: 1.6vw;
+    
+}
+
+@media screen and (max-width:856px) {
+    .intro-about img{
+        min-width: 300px;
+        min-height: auto;
+    
+
+    
+        object-fit: fill;
+        
+    }
+    .intro-about p{
+        max-width: 100%;
+        align-self: center;
+        flex-shrink: 1;
+     
+        font-size: 15px;
+        
+}
+.strong-a-weak{
 
 }
 
-.my_roadmap{
+.Q-about{
 
 }
 
-.my_contact{
+.main-about {}
 
-}
+.my_product {}
+
+.my_roadmap {}
+
+.my_contact {}
