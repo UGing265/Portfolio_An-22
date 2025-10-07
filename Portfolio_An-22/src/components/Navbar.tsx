@@ -1,23 +1,25 @@
-import type { FC } from "react";
+// Navbar.jsx
+import { Search } from "lucide-react";
+import NavMenu from "./NavMenu";
 
-const Navbar: FC = () => {
-    return(
-        <header className="bg-black">
-            <div className="flex flex-row-reverse items-center gap-3 mr-8 py-2">
-                <a
-                    href="/CV.html"
-                    className="text-xl font-bold text-cyan-300 bg-red-600 px-3 py-2 rounded-lg hover:bg-red-900 hover:text-cyan-700 transition"
-                > 
-                CV
-                </a>
-                <a
-                href="#contact"
-                className="text-xl font-bold text-cyan-300 bg-red-600 px-3 py-2 rounded-lg hover:bg-red-900 hover:text-cyan-700 transition"
-                >
-                    Contact
-                </a>
+export default function Navbar() {
+    return (
+        <header className="fixed left-0 right-0 top-0 z-50 text-white">
+            {/* thanh 1 tầng: nền tím translucent + blur nhẹ để nổi trên ảnh */}
+            <div className="bg-indigo-900/60 backdrop-blur">
+                <div className="mx-auto  max-w-7xl h-14 px-10 flex items-center gap-x-30">
+                    {/* (A) Logo bên trái — viết sẵn */}
+                    <a href="/" aria-label="Home" className="mr-6">
+                        <span className="font-extrabold tracking-wider text-xl">⟪ EMBRAER ⟫</span>
+                    </a>
+
+                    {/* (B) Menu ở giữa — tách riêng thành component */}
+                    <NavMenu />
+
+                    {/* (C) Search bên phải — để bạn tự viết tiếp */}
+                    <Search className="cursor-pointer" />
+                </div>
             </div>
         </header>
     );
 }
-export default Navbar;
