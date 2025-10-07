@@ -4,3 +4,8 @@ bạn là giáo viên hãy hướng dẫn "tailwindcss" và tạo 1 file dựa v
 
 
  LUÔN TÁCH RA COMPONENT 
+
+
+# KEYWORD
+ glass effect
+ fade-out edge
