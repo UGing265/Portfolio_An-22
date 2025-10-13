@@ -9,10 +9,7 @@ export default function Hero() {
         }, []);
     
     return (
-        <section
-            // className="bg-no-repeat bg-cover bg-center min-w-[1000px] h-[1000px]"
-            // style={{ backgroundImage: "url('background.jpg')" }}
-        >
+        <section className="relative min-h-screen overflow-hidden">
             <video
                 className="object-cover w-full h-full"
                 src="/747-2.mp4"
@@ -23,8 +20,8 @@ export default function Hero() {
              <div className={`${scrolled ? 
              "bg-transparent transition duration-1000 ease-in-out"
              : "absolute inset-x-0 top-0 h-[33vh] bg-gradient-to-b from-blue-950/80 via-blue-950/30 to-transparent to-100% z-10 transition duration-1000 ease-in-out "}`} />
-            <div className="text-center py-[40%]">
-                <h1 className="text-4xl font-bold text-white drop-shadow-lg">
+            <div className="absolute inset-x-0 bottom-0 text-center py-[40%]">
+                <h1 className="absolute bottom-60 left-20 text-7xl font-bold text-white drop-shadow-lg">
                     Beautiful Sky
                 </h1>
             </div>
