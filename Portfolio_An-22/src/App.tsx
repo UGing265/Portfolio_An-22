@@ -1,9 +1,10 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar"
-import Roadmap from "./components/Roadmap";
+import About from "./components/homepage/About";
+import Contact from "./components/homepage/Contact";
+import Footer from "./components/homepage/Footer";
+import Hero from "./components/homepage/Hero";
+import Navbar from "./components/homepage/Navbar"
+import Project from "./components/homepage/project";
+import Roadmap from "./components/homepage/Roadmap";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <About />
         <Roadmap />
+        <Project />
         <Contact />
       </main>
       <Footer />
