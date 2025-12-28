@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={
-            <main>
+            <main className="flex flex-col gap-12 md:gap-24">
               <Hero />
               <About />
               <Roadmap />
