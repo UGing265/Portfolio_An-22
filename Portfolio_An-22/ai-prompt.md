@@ -9,3 +9,4 @@ bạn là giáo viên hãy hướng dẫn "tailwindcss" và tạo 1 file dựa v
 # KEYWORD
  glass effect
  fade-out edge
+ 60 - 30 - 10

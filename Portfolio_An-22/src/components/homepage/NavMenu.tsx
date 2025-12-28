@@ -9,7 +9,7 @@ export default function NavMenu() {
                     <span className=" group  cursor-pointer font-semibold text-white relative 
                         after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                         after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
-                        Commercial Aviation
+                        Home
                     </span>
                 </Link>
             </div>
@@ -18,26 +18,26 @@ export default function NavMenu() {
                 <span className="group  cursor-pointer font-semibold text-white relative 
                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                     after:bg-white after:transition-all after:duration-300 group-hover:after:w-full
-                ">Defense & Sercurity </span>
+                ">Tech </span>
 
             </div>
             <div className="group relative cursor-pointer">
                 <span className="group  cursor-pointer font-semibold text-white relative 
                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                     after:bg-white after:transition-all after:duration-300 group-hover:after:w-full
-                ">Excutive Jets</span>
+                ">Lifestyle </span>
             </div>
             <div className="group relative cursor-pointer">
                 <span className="group  cursor-pointer font-semibold text-white relative 
                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                     after:bg-white after:transition-all after:duration-300 group-hover:after:w-full
-                ">Services Support</span>
+                ">About Me</span>
             </div>
             <div className="group relative cursor-pointer">
                 <span className="group  cursor-pointer font-semibold text-white relative 
                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                     after:bg-white after:transition-all after:duration-300 group-hover:after:w-full
-                ">More Bussiness</span>
+                ">Contact</span>
             </div>
         </nav>
     );
